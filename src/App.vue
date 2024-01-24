@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PBadge status="on_air" />
+    <PBadge status="postponed" />
+    <PBadge status="upcoming" />
+    <PBadge status="on_demand" />
+    <PBadge status="highlight" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PBadge from './components/PBadge.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PBadge
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.badge {
+  display: block;
 }
 </style>
