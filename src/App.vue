@@ -8,15 +8,16 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import PBadge from './components/PBadge.vue'
 
-export default {
+export default Vue.extend({
   name: 'App',
   components: {
     PBadge
   }
-}
+});
 </script>
 
 <style>
