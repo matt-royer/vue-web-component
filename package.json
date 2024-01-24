@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-wc": "vue-cli-service build --target wc --name p-badge ./src/components/Badge.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -41,7 +42,9 @@
     "parserOptions": {
       "parser": "@typescript-eslint/parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off"
+    }
   },
   "browserslist": [
     "> 1%",
