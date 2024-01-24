@@ -9,10 +9,9 @@ npm install
 ```
 npm run serve
 ```
-
-### Lints and fixes files
+### Generate Badge Web Component
 ```
-npm run lint
+npm run build -- --target wc --name playon-badge src/components/PBadge.vue
 ```
 
 ### Customize configuration
