@@ -63,11 +63,11 @@ export default Vue.extend({
   border-radius: @border-radius;
   font-size: @font-size;
   line-height: @font-size;
+  gap: @spacing;
 
   .icon {
     height: @font-size;
     line-height: @font-size;
-    margin-right: @spacing;
 
     img {
       height: @icon-size;
@@ -116,10 +116,10 @@ export default Vue.extend({
     color: #ffffff;
   }
   &.light {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
   }
   &.dark {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     color: #ffffff;
   }
   &.highlight {
@@ -150,7 +150,6 @@ export default Vue.extend({
 
   &.icon-only .icon {
     display: flex;
-    margin-right: 0;
   }
 }
 </style>
