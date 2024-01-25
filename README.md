@@ -26,6 +26,3 @@ npm run build-wc
   squared
 />
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
