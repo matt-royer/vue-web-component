@@ -26,3 +26,7 @@ npm run build-wc
   squared
 />
 ```
+
+![image](https://github.com/matt-royer/vue-web-component/assets/20653437/3fbeb305-7d5d-443a-83bc-30126a0eaaea)
+
+
