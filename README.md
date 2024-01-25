@@ -14,9 +14,9 @@ npm run serve
 npm run build-wc
 ```
 
-### Using the playon-badge web Component
+### Using the p-badge web Component
 ```
-<playon-badge
+<p-badge
   text="Label"
   type="primary | secondary | accent | light | dark | highlight | featured"
   icon="live | cancel | calendar | list | camera"
