@@ -9,10 +9,9 @@ npm install
 ```
 npm run serve
 ```
-
-### Generate Badge Web Component
+### Generate Web Component
 ```
-npm run build -- --target wc --name playon-badge src/components/PBadge.vue
+npm run build-wc
 ```
 
 ### Using the playon-badge web Component
