@@ -6,7 +6,7 @@
     <a href="https://www.figma.com/file/WrIjx9VD2ohV1SW0b4ByID/Event-Cards?node-id=863%3A2474&mode=dev" target="_blank">Status Badge</a>
     <br /><br />
 
-    <label>Badge (type)</label>
+    <label>Badge Types</label>
     <badge text="Default" />
     <badge text="Primary" type="primary" />
     <badge text="Secondary" type="secondary" />
@@ -17,14 +17,14 @@
     <badge text="Featured" type="featured" />
     <br />
 
-    <label>Badge (size)</label>
+    <label>Badge Sizes</label>
     <badge text="Small" small />
     <badge text="Default" />
     <badge text="Large" large />
     <badge text="Extra Large" xl />
     <br />
 
-    <label>Badge (icon)</label>
+    <label>Badge Icons</label>
     <badge text="Label" icon="live" small />
     <badge icon="live" small />
     <badge text="Label" icon="live" />
@@ -33,6 +33,28 @@
     <badge icon="live" large />
     <badge text="Label" icon="live" xl />
     <badge icon="live" xl />
+    <br />
+
+    <label>Badge Border</label>
+    <badge text="Label" type="primary" small bordered />
+    <badge text="Label" type="secondary" bordered />
+    <badge text="Label" type="accent" large bordered />
+    <badge text="Label" type="featured" xl bordered />
+    <br />
+
+    <label>Badge Squared</label>
+    <badge text="Default" squared />
+    <badge text="Primary" type="primary" squared />
+    <badge text="Secondary" type="secondary" squared />
+    <badge text="Accent" type="accent" squared />
+    <badge text="Light" type="light" squared />
+    <badge text="Dark" type="dark" squared />
+    <badge text="Highlight" type="highlight" squared />
+    <badge text="Featured" type="featured" squared />
+    <br />
+
+    <label>Badge Truncation</label>
+    <badge text="Really long label" :truncate="15" />
     <br />
 
     <label>Example Status Badges</label>

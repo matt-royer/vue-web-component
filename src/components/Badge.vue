@@ -1,7 +1,7 @@
 <template>
   <div :class="classes" data-test="badge">
     <icon :name="$props.icon" v-if="!!$props.icon" />
-    <span class="text" data-test="text" v-if="!!$props.text">{{ $props.text }}</span>
+    <span class="text" data-test="text" v-if="!!displayText">{{ displayText }}</span>
   </div>
 </template>
 
@@ -41,6 +41,21 @@ export default Vue.extend({
       required: false,
       default: "default",
     },
+    truncate: {
+      type: Number,
+      required: false,
+      default: 0,
+    },
+    bordered: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    squared: {
+      type: Boolean,
+      required: false,
+      default: false,
+    }
   },
   computed: {
     classes(): string[] {
@@ -48,10 +63,18 @@ export default Vue.extend({
         "badge",
         this.type,
         !!this.icon && !this.text ? "icon-only" : "",
+        this.bordered ? "bordered" : "",
+        this.squared ? "squared" : "",
         this.small ? "small" : "",
         this.large ? "large" : "",
         this.xl ? "xl" : "",
       ];
+    },
+    displayText(): string {
+      if (this.truncate > 0) {
+        return this.text.substring(0, this.truncate) + "...";
+      }
+      return this.text;
     }
   },
 });
@@ -60,7 +83,6 @@ export default Vue.extend({
 <style lang="less" scoped>
 .variant() {
   padding: @spacing @spacing * 1.5;
-  border-radius: @border-radius;
   font-size: @font-size;
   line-height: @font-size;
   gap: @spacing;
@@ -79,7 +101,6 @@ export default Vue.extend({
 .badge {
   @font-size: 0.75rem;
   @spacing: 0.5rem;
-  @border-radius: 2.5rem;
   @icon-size: 1rem;
 
   color: #000000;
@@ -89,6 +110,7 @@ export default Vue.extend({
   display: inline-flex;
   align-items: center;
   vertical-align: top;
+  border-radius: 2.5rem;
   user-select: none;
   .variant();
 
@@ -132,7 +154,6 @@ export default Vue.extend({
 
   &.small {
     @spacing: 0.25rem;
-    @border-radius: 0.25rem;
     .variant();
   }
   &.large {
@@ -146,6 +167,13 @@ export default Vue.extend({
     @spacing: 0.5rem;
     @icon-size: 1.25rem;
     .variant();
+  }
+
+  &.bordered {
+    border: 1px solid rgba(255,255,255,0.7);
+  }
+  &.squared {
+    border-radius: 0.25rem;
   }
 
   &.icon-only .icon {
