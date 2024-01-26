@@ -25,32 +25,30 @@
     <br />
 
     <label>Badge Icons</label>
-    <badge text="Label" icon="live" small />
-    <badge icon="live" small />
-    <badge text="Label" icon="live" />
     <badge icon="live" />
-    <badge text="Label" icon="live" large />
-    <badge icon="live" large />
-    <badge text="Label" icon="live" xl />
-    <badge icon="live" xl />
+    <badge text="Live" icon="live" />
+    <badge icon="cancel" />
+    <badge text="cancel" icon="cancel" />
+    <badge icon="calendar" />
+    <badge text="calendar" icon="calendar" />
+    <badge icon="list" />
+    <badge text="list" icon="list" />
+    <badge icon="camera" />
+    <badge text="camera" icon="camera" />
     <br />
 
     <label>Badge Border</label>
-    <badge text="Label" type="primary" small bordered />
-    <badge text="Label" type="secondary" bordered />
-    <badge text="Label" type="accent" large bordered />
-    <badge text="Label" type="featured" xl bordered />
+    <badge text="Label" type="default" small bordered />
+    <badge text="Label" type="primary" bordered />
+    <badge text="Label" type="secondary" large bordered />
+    <badge text="Label" type="accent" xl bordered />
     <br />
 
     <label>Badge Squared</label>
-    <badge text="Default" squared />
-    <badge text="Primary" type="primary" squared />
-    <badge text="Secondary" type="secondary" squared />
-    <badge text="Accent" type="accent" squared />
-    <badge text="Light" type="light" squared />
-    <badge text="Dark" type="dark" squared />
-    <badge text="Highlight" type="highlight" squared />
-    <badge text="Featured" type="featured" squared />
+    <badge text="Label" squared small />
+    <badge text="Label" type="primary" squared />
+    <badge text="Label" type="secondary" squared large />
+    <badge text="Label" type="accent" squared xl />
     <br />
 
     <label>Badge Truncation</label>
